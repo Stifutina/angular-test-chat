@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <h1>Real Time Chat</h1>
+</mat-toolbar>
+
+<div class="messages">
+  <div class="messages__history">
+    <div *ngFor="let message of messages | async">
+      {{message}}
+    </div>
+  </div>
+
+  <div class="messages__form">
+    <mat-form-field>
+      <input matInput placeholder="Your message..." value="" name="message" #message>
+    </mat-form-field>
+
+    <button (click)="newMessage(message.value)" mat-raised-button color="accent">Send</button>
+  </div>
+</div>

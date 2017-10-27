@@ -10,10 +10,10 @@ export class AppComponent {
 
   users = [
     {
-      name: 'aarushi'
+      name: 'Nemo'
     },
     {
-      name: 'lancer'
+      name: 'Phoenix'
     }
   ];
 

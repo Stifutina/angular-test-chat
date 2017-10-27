@@ -1,20 +1,7 @@
 <div class="component">
   <div class="row">
-    <app-user *ngFor="let u of users" [user]="u"></app-user>
-  </div>
-
-  <div class="row">
-
-
-
-    <form class="col s12 m8 l6" id="messageForm">
-
-        <mat-form-field class="col s10 m10 l11">
-          <input matInput placeholder="Message" value="" name="message">
-        </mat-form-field>
-
-        <button type="submit" mat-raised-button color="accent">Send</button>
-
-    </form>
+    <div class="col s12 m6 l8">
+      <app-chat></app-chat>
+    </div>
   </div>
 </div>
